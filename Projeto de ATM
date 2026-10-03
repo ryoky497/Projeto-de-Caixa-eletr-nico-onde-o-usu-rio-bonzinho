@@ -5,6 +5,8 @@ while True:
   Retirada = float(input(""))
   if Retirada < 0:
     print("impossivel realizar esta transação")
+  elif Retirada > saldo:
+    print("transação negada")
   else:
     break
 
@@ -14,4 +16,4 @@ if Retirada >= 400:
 else:
   print("saque realizado")
 
-print(f"saldo Restante {saldo - Retirada}: ")
+print(f"saldo Restante {saldo - Retirada:,.2f} ")
